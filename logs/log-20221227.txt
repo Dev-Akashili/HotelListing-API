@@ -1,0 +1,12 @@
+2022-12-27 16:03:13.214 +00:00 [INF] Now listening on: https://localhost:7107
+2022-12-27 16:03:13.242 +00:00 [INF] Now listening on: http://localhost:5129
+2022-12-27 16:03:13.245 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-27 16:03:13.245 +00:00 [INF] Hosting environment: Development
+2022-12-27 16:03:13.245 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2022-12-27 16:05:06.100 +00:00 [INF] Application is shutting down...
+2022-12-27 16:16:57.219 +00:00 [INF] Now listening on: https://localhost:7107
+2022-12-27 16:16:57.243 +00:00 [INF] Now listening on: http://localhost:5129
+2022-12-27 16:16:57.245 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-12-27 16:16:57.246 +00:00 [INF] Hosting environment: Development
+2022-12-27 16:16:57.246 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2022-12-27 16:21:26.910 +00:00 [INF] Application is shutting down...

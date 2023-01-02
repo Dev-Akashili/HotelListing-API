@@ -1,0 +1,175 @@
+2023-01-01 16:26:40.474 +00:00 [INF] Application is shutting down...
+2023-01-01 17:14:48.621 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-01 17:14:48.646 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-01 17:14:48.649 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-01 17:14:48.649 +00:00 [INF] Hosting environment: Development
+2023-01-01 17:14:48.649 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2023-01-01 17:26:04.012 +00:00 [INF] Application is shutting down...
+2023-01-01 17:26:07.074 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-01 17:26:07.103 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-01 17:26:07.106 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-01 17:26:07.106 +00:00 [INF] Hosting environment: Development
+2023-01-01 17:26:07.106 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2023-01-01 17:31:09.811 +00:00 [INF] Application is shutting down...
+2023-01-01 17:32:48.210 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-01 17:32:48.236 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-01 17:32:48.239 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-01 17:32:48.239 +00:00 [INF] Hosting environment: Development
+2023-01-01 17:32:48.239 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2023-01-01 17:34:48.159 +00:00 [INF] Application is shutting down...
+2023-01-01 17:36:12.487 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-01 17:36:12.512 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-01 17:36:12.514 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-01 17:36:12.515 +00:00 [INF] Hosting environment: Development
+2023-01-01 17:36:12.515 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2023-01-01 17:37:51.185 +00:00 [INF] Application is shutting down...
+2023-01-01 17:37:58.579 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-01 17:37:58.602 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-01 17:37:58.605 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-01 17:37:58.605 +00:00 [INF] Hosting environment: Development
+2023-01-01 17:37:58.605 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2023-01-01 17:38:31.248 +00:00 [INF] Application is shutting down...
+2023-01-01 17:39:55.414 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-01 17:39:55.438 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-01 17:39:55.440 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-01 17:39:55.440 +00:00 [INF] Hosting environment: Development
+2023-01-01 17:39:55.440 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2023-01-01 17:41:57.122 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateHotelDto -> Hotel
+HotelListing.API.Models.Hotel.CreateHotelDto -> HotelListing.API.Data.Hotel
+   at lambda_method13(Closure , Object , Hotel , ResolutionContext )
+   at HotelListing.API.Controllers.HotelsController.CreateHotel(CreateHotelDto hotelDto) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/Controllers/HotelsController.cs:line 49
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-01 17:43:36.397 +00:00 [INF] Application is shutting down...
+2023-01-01 17:43:39.619 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-01 17:43:39.644 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-01 17:43:39.646 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-01 17:43:39.647 +00:00 [INF] Hosting environment: Development
+2023-01-01 17:43:39.647 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2023-01-01 17:44:55.672 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateHotelDto -> Hotel
+HotelListing.API.Models.Hotel.CreateHotelDto -> HotelListing.API.Data.Hotel
+   at lambda_method13(Closure , Object , Hotel , ResolutionContext )
+   at HotelListing.API.Controllers.HotelsController.CreateHotel(CreateHotelDto hotelDto) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/Controllers/HotelsController.cs:line 49
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-01 17:46:12.281 +00:00 [INF] Application is shutting down...
+2023-01-01 17:53:13.734 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-01 17:53:13.759 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-01 17:53:13.762 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-01 17:53:13.762 +00:00 [INF] Hosting environment: Development
+2023-01-01 17:53:13.762 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2023-01-01 17:55:07.186 +00:00 [INF] Application is shutting down...
+2023-01-01 17:55:14.271 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-01 17:55:14.295 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-01 17:55:14.297 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-01 17:55:14.298 +00:00 [INF] Hosting environment: Development
+2023-01-01 17:55:14.298 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/
+2023-01-01 18:07:51.862 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateHotelDto -> Hotel
+HotelListing.API.Models.Hotel.CreateHotelDto -> HotelListing.API.Data.Hotel
+   at lambda_method70(Closure , Object , Hotel , ResolutionContext )
+   at HotelListing.API.Controllers.HotelsController.CreateHotel(CreateHotelDto hotelDto) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/Controllers/HotelsController.cs:line 49
+   at lambda_method65(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-01 18:08:55.412 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateHotelDto -> Hotel
+HotelListing.API.Models.Hotel.CreateHotelDto -> HotelListing.API.Data.Hotel
+   at lambda_method70(Closure , Object , Hotel , ResolutionContext )
+   at HotelListing.API.Controllers.HotelsController.CreateHotel(CreateHotelDto hotelDto) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/Controllers/HotelsController.cs:line 49
+   at lambda_method65(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-01 18:08:57.967 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CreateHotelDto -> Hotel
+HotelListing.API.Models.Hotel.CreateHotelDto -> HotelListing.API.Data.Hotel
+   at lambda_method70(Closure , Object , Hotel , ResolutionContext )
+   at HotelListing.API.Controllers.HotelsController.CreateHotel(CreateHotelDto hotelDto) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing.API/Controllers/HotelsController.cs:line 49
+   at lambda_method65(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-01 18:09:16.995 +00:00 [INF] Application is shutting down...
