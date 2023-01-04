@@ -19,3 +19,83 @@ CREATE TABLE "AspNetRoles" (
 2023-01-04 01:44:12.039 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/
 2023-01-04 01:44:47.599 +00:00 [WRN] Invalid password for user.
 2023-01-04 01:45:22.891 +00:00 [INF] Application is shutting down...
+2023-01-04 02:00:48.755 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-04 02:00:48.780 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-04 02:00:48.783 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-04 02:00:48.783 +00:00 [INF] Hosting environment: Development
+2023-01-04 02:00:48.783 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/
+2023-01-04 02:01:30.502 +00:00 [INF] Application is shutting down...
+2023-01-04 16:22:21.688 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-04 16:22:21.714 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-04 16:22:21.716 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-04 16:22:21.716 +00:00 [INF] Hosting environment: Development
+2023-01-04 16:22:21.716 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/
+2023-01-04 16:22:49.798 +00:00 [WRN] Invalid password for user.
+2023-01-04 16:22:49.955 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at HotelListing.API.Repository.AuthManager.GenerateToken(User user) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/Repository/AuthManager.cs:line 78
+   at HotelListing.API.Repository.AuthManager.Login(LoginDto loginDto) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/Repository/AuthManager.cs:line 32
+   at HotelListing.API.Controllers.AccountController.Login(LoginDto loginDto) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/Controllers/AccountController.cs:line 46
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-04 16:24:29.598 +00:00 [INF] Application is shutting down...
+2023-01-04 16:27:14.194 +00:00 [ERR] Failed executing DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "AspNetRoles" (
+    "Id" text NOT NULL,
+    "Name" character varying(256) NULL,
+    "NormalizedName" character varying(256) NULL,
+    "ConcurrencyStamp" text NULL,
+    CONSTRAINT "PK_AspNetRoles" PRIMARY KEY ("Id")
+);
+2023-01-04 16:27:30.107 +00:00 [INF] Now listening on: https://localhost:7107
+2023-01-04 16:27:30.130 +00:00 [INF] Now listening on: http://localhost:5129
+2023-01-04 16:27:30.132 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-01-04 16:27:30.132 +00:00 [INF] Hosting environment: Development
+2023-01-04 16:27:30.132 +00:00 [INF] Content root path: /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/
+2023-01-04 16:30:32.201 +00:00 [WRN] Invalid password for user.
+2023-01-04 16:30:32.363 +00:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10653: The encryption algorithm 'System.String' requires a key size of at least 'System.Int32' bits. Key 'Microsoft.IdentityModel.Tokens.SymmetricSecurityKey', is of size: 'System.Int32'. (Parameter 'key')
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider..ctor(SecurityKey key, String algorithm, Boolean willCreateSignatures)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateSignatureProvider(SecurityKey key, String algorithm, Boolean willCreateSignatures, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm, Boolean cacheProvider)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateForSigning(SecurityKey key, String algorithm)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.WriteToken(SecurityToken token)
+   at HotelListing.API.Repository.AuthManager.GenerateToken(User user) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/Repository/AuthManager.cs:line 78
+   at HotelListing.API.Repository.AuthManager.Login(LoginDto loginDto) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/Repository/AuthManager.cs:line 32
+   at HotelListing.API.Controllers.AccountController.Login(LoginDto loginDto) in /Users/emekaakashili/Desktop/Personal Projects/HotelListing-API/Controllers/AccountController.cs:line 46
+   at lambda_method6(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-01-04 16:31:47.849 +00:00 [INF] Application is shutting down...
