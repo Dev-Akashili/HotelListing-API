@@ -1,6 +1,6 @@
 # HotelListing-API
 
-This a sample web api built with ASP .NET Core that displays countries some hotels you can find them.
+This a sample web API built with ASP .NET Core that displays countries some hotels you can find them.
 
 You can perform CRUD operations using swagger docs or postman while testing the api
 
@@ -19,3 +19,5 @@ You can perform CRUD operations using swagger docs or postman while testing the 
 3. Navigate to the directory and in the terminal run migrations:
   - `dotnet ef database update`
   - The above runs against the default local server, using the connection string in `appsettings.Development.json`
+  
+4. Run `dotnet run` in the terminal and navigate to https://localhost:7107 to test API
