@@ -67,7 +67,7 @@ public class CountriesController : ControllerBase
     }
     
     // DELETE: api/Countries/id
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public async Task<IActionResult> DeleteCountry(int id)
     {
         var country = _countriesRepository.GetAsync(id);

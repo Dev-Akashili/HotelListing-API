@@ -1,8 +1,10 @@
+using HotelListing.API.Data.Configurations;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace HotelListing.API.Data;
 
-public class HotelListingDbContext : DbContext
+public class HotelListingDbContext : IdentityDbContext<User>
 {
     public HotelListingDbContext(DbContextOptions<HotelListingDbContext> options) : base(options) { }
 
@@ -12,53 +14,10 @@ public class HotelListingDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
-        modelBuilder.Entity<Country>().HasData(
-            new Country
-            {
-                Id = 1,
-                Name = "Nigeria",
-                ShortName = "NG"
-            },
-            new Country
-            {
-                Id = 2,
-                Name= "United States",
-                ShortName = "US"
-            },
-            new Country
-            {
-                Id = 3,
-                Name= "United Kingdom",
-                ShortName = "UK"
-            }
-        );
+        modelBuilder.ApplyConfiguration(new RoleConfiguration());
+        modelBuilder.ApplyConfiguration(new CountryConfiguration());
+        modelBuilder.ApplyConfiguration(new HotelConfiguration());
 
-        modelBuilder.Entity<Hotel>().HasData(
-            new Hotel
-            {
-                Id = 1,
-                Name = "Lagos Continental",
-                Address = "VI",
-                CountryId = 1,
-                Rating = 5
-            },
-            new Hotel
-            {
-                Id = 2,
-                Name = "The Orchid Hotel",
-                Address = "Nottingham",
-                CountryId = 3,
-                Rating = 4
-            },
-            new Hotel
-            {
-                Id = 3,
-                Name = "Sheraton",
-                Address = "California",
-                CountryId = 2,
-                Rating = 6
-            }
-        );
     }
 }
 
